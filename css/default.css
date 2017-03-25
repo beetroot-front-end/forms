@@ -5,5 +5,12 @@
     font-family: 'Montserrat', sans-serif;
 }
 .bg--pricing-page {
-    background: url('../img/bg.jpg');
+    background: url('../img/bg.jpg') no-repeat center;
+    background-size: cover;
+}
+.payment-modal  {
+    width: 336px;
+    min-height: 150px;
+    background-color: #fff;
+    
 }
