@@ -1,0 +1,9 @@
+ html, body {
+    height: 100%;
+    min-width: 320px;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+.bg--pricing-page {
+    background: url('../img/bg.jpg');
+}
