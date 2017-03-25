@@ -21,9 +21,12 @@
     height: 72px;
     line-height: 72px;
     background-color: #eee4a9;
+    padding: 0 24px;
 }
 .payment__modal-header-title {
-    float: left;
+    line-height: 16px;
+    display: inline-block;
+    vertical-align: middle;
 }
 .payment__modal-header-title-name {
   font-size: 14px;
