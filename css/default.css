@@ -8,9 +8,37 @@
     background: url('../img/bg.jpg') no-repeat center;
     background-size: cover;
 }
-.payment-modal  {
+.payment__modal  {
     width: 336px;
     min-height: 150px;
     background-color: #fff;
-    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.payment__modal-header {
+    height: 72px;
+    line-height: 72px;
+    background-color: #eee4a9;
+}
+.payment__modal-header-title {
+    float: left;
+}
+.payment__modal-header-title-name {
+  font-size: 14px;
+  color: rgb(110, 127, 123);
+  font-weight: 600;
+  display: block;
+}
+.payment__modal-header-title-descr {
+  font-size: 10px;
+  color: rgb(166, 162, 141);
+  text-transform: uppercase;
+}
+.payment__modal-price {
+  font-size: 36px;
+  color: rgb(99, 117, 112);
+  font-weight: 900;
+  float: right;
 }
