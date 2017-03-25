@@ -45,3 +45,115 @@
   font-weight: 900;
   float: right;
 }
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.payment__modal-body {
+    padding: 15px 24px;
+}
+.payment__modal-field-title {
+  font-size: 13px;
+  color: rgb(158, 171, 173);
+  font-weight: 600;
+  padding-bottom: 6px;
+  padding-top: 25px;
+}
+
+.payment__modal-field-number,
+.payment__modal-field-month,
+.payment__modal-field-year,
+.payment__modal-field-cvv {
+  border: 2px solid rgb(186, 200, 203);
+  padding: 14px 0;
+  text-indent: 8px;
+  font-size: 13px;
+  color: rgb(114, 127, 130);
+  font-weight: 600;
+}
+.payment__modal-field-year,
+.payment__modal-field-month {
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+   background: url('../img/arrow.png') no-repeat 92% center;
+
+}
+
+.payment__modal-field-number {
+    width: 100%;
+    display: block;
+}   
+.payment__modal-field-month {
+    width: 170px;
+    margin-right: 17px;
+}
+.payment__modal-field-cvv,
+.payment__modal-field-year {
+    width: 96px;
+}
+.payment__modal-cvv-help {
+  font-size: 12px;
+  color: rgb(158, 171, 173);
+  display: inline-block;
+  margin-left: 15px;
+  position: relative;
+}
+.payment__modal-help-content {
+    opacity: 0;
+    transition: opacity .5s ease;
+    pointer-events: none;
+    display: inline-block;
+    padding: 15px;
+    border-radius: 6px;
+    background-color: #fff;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: calc(100% + 25px);
+    box-shadow: 1px 1px 5px 2px rgba(0,0,0, .3);
+}
+.payment__modal-trigger-help {
+    color: inherit;
+}
+.payment__modal-trigger-help:hover +
+.payment__modal-help-content{
+    opacity: 1;
+}
+.payment--line {
+    margin: 25px 0;
+    border: 1px solid #e3e7e8;
+}
+.payment__modal-submit {
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 12px;
+    background-color: #26b168;
+    color: #fff;
+    font-family: "Montserrat";
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform .2s ease-in;
+    -webkit-font-smoothing: auto;
+    -moz-font-smoothing: auto;
+    -moz-osx-font-smoothing: auto;
+    font-smooth: auto;
+}
+.payment__modal-submit:hover {
+    transform: scale(1.05);
+}
+.payment__modal-cancel {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.payment__modal-cancel-btn {
+  font-size: 12px;
+  text-decoration: none;
+  border-bottom: 1px solid rgb(158, 171, 173);
+  color: rgb(158, 171, 173);
+  padding-bottom: 2px;
+}

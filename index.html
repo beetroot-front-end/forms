@@ -11,12 +11,53 @@
 </head>
 <body class="bg--pricing-page">
     <div class="payment__modal">
-        <div class="payment__modal-header">
+        <div class="payment__modal-header clearfix">
            <h4 class="payment__modal-header-title">
                  <span class="payment__modal-header-title-name">Harold Finch</span>
                  <span class="payment__modal-header-title-descr">Your Total</span>      
            </h4>
            <p class="payment__modal-price">$88</p> 
+        </div>
+        <div class="payment__modal-body">
+          <form action="#" method="POST">
+            <label class="payment__modal-field">
+                <p class="payment__modal-field-title">Credit card number</p>
+                <input type="text" class="payment__modal-field-number">
+            </label>    
+            <label class="payment__modal-field">
+                <p class="payment__modal-field-title">Expiration date</p>
+                <select name="month" class="payment__modal-field-month">
+                    <option value="0" selected disabled>Month</option>
+                    <option value="">March</option>
+                    <option value="">April</option>
+                    <option value="">May</option>
+                </select>
+            </label>
+            <label class="payment__modal-field">
+                <select name="year" class="payment__modal-field-year">
+                    <option value="0" selected disabled>Year</option>
+                    <option value="">2017</option>
+                    <option value="">2018</option>
+                    <option value="">2019</option>
+                </select>
+            </label>
+            <label class="payment__modal-field">
+                <p class="payment__modal-field-title"> CVV </p>
+                <input type="text" class="payment__modal-field-cvv" min="0" max="9999">
+                <p class="payment__modal-cvv-help"> 
+                    3 or 4 digits - 
+                    <a href="#" class="payment__modal-trigger-help">view example</a>
+                    <span class="payment__modal-help-content">
+                        <img src="img/cvv.gif" alt="">
+                    </span>
+                </p>
+            </label>
+            <hr class="payment--line">
+            <button class="payment__modal-submit"> Pay </button>
+            <p class="payment__modal-cancel">
+                <a href="#" class="payment__modal-cancel-btn">Cancel order</a>
+            </p>
+          </form>  
         </div>
     </div>
 </body>
